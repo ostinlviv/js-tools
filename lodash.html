@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lodash example</title>
+    <script src="node_modules/lodash/lodash.js"></script>
+</head>
+<body>
+    <div id="menu-holder"></div>
+    <script type="text/template" id="menu-template">
+        <div class="menu">
+            <span class="title"><%-title%></span>
+            <ul>
+                <% items.forEach(function(item) { %>
+                <li><%-item%></li>
+                <% }); %>
+            </ul>
+        </div>
+    </script>
+    <script src="scripts/lodash.js"></script>
+</body>
+</html>
